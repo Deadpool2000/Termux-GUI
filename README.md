@@ -28,7 +28,7 @@ d) After above step,type following command -
 
       DISPLAY=:1 startxfce4 &
 
-      Here,1 is a session number.
+   Here,1 is a session number.
       
 e) Install VNC Viewer on your phone
 
