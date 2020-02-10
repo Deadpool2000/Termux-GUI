@@ -10,3 +10,6 @@ This script install xfce environment in Termux
 2) git clone https://github.com/Deadpool2000/Termux-GUI.git
 3) cd Termux-GUI
 4) python3 gui.py
+
+## Download
+VNC Viewer - [Download](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_IN)
