@@ -16,27 +16,32 @@ VNC Viewer - [Download](https://play.google.com/store/apps/details?id=com.realvn
 
 ## How to start Termux-GUI
 
-1) Run 'vncserver' command
-2) Add new password for vnc
-3) You will get IP Address like this -
+a) Run 'vncserver' command
+b) Add new password for vnc
+c) You will get IP Address like this -
 
       localhost:<session_number>
 
       e.g. localhost:1
    
-3) After above step,type following command -
+d) After above step,type following command -
 
       DISPLAY=:1 startxfce4 &
 
-Here,1 is a session number.
-4) Install VNC Viewer on your phone
-5) Add IP Address which you got at Step 3
+      Here,1 is a session number.
+      
+e) Install VNC Viewer on your phone
+
+f) Add IP Address which you got at Step 3
 
       e.g. localhost:1
     
-6) Add name
-7) Click on Connect
-8) Enter VNC password which you used at Step 2
+g) Add name
+
+h) Click on Connect
+
+i) Enter VNC password which you used at Step 2
+
 
 
 **Important Note - If you want to exit from GUI,type following command before exit -**
