@@ -42,8 +42,9 @@ h) Click on Connect
 
 i) Enter VNC password which you used at Step 2
 
+## Exit GUI
 
+1) Enter following command before exit -
 
-**Important Note - If you want to exit from GUI,type following command before exit -**
-                  **-> vncserver -kill :<session_number>**
-                  **e.g. vncserver -kill :1**
+            vncserver -kill :<session_number>
+            e.g. vncserver -kill :1
