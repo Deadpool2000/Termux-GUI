@@ -48,8 +48,10 @@ Here,1 is a session number.
 
 """+G+"""
 ** Important Note - If you want to exit from GUI,type following command before exit -
-                    -> vncserver -kill :<session_number>
-                    e.g. vncserver -kill :1
+
+-> vncserver -kill :<session_number>
+
+e.g. vncserver -kill :1
 """+W)
     except:
         print(Y+"""
