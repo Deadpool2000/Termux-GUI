@@ -47,7 +47,9 @@ i) Enter VNC password which you used at Step 2
 
 ## Exit GUI
 
-1) Enter following command before exit -
+Enter following command before exit -
 
             vncserver -kill :<session_number>
             e.g. vncserver -kill :1
+            
+## IF you have any issue,Report [Here]()
