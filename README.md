@@ -18,7 +18,9 @@ VNC Viewer - [Download](https://play.google.com/store/apps/details?id=com.realvn
 ## How to start Termux-GUI
 
 a) Run 'vncserver' command
+
 b) Add new password for vnc
+
 c) You will get IP Address like this -
 
       localhost:<session_number>
