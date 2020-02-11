@@ -52,4 +52,4 @@ Enter following command before exit -
             vncserver -kill :<session_number>
             e.g. vncserver -kill :1
             
-## If you have any issue,Report [Here](https://github.com/Deadpool2000/Termux-GUI/issues)
+## If you have any issue regarding this,Report [Here](https://github.com/Deadpool2000/Termux-GUI/issues)
