@@ -22,7 +22,7 @@ try:
         os.system("pkg install x11-repo")
         os.system("pkg install unstable-repo")
         print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
-        os.system("apt install xfce xfce4-terminal tigervnc -y")
+        os.system("pkg install xfce xfce4-terminal tigervnc -y")
         print(R+"""\n
 ----------------------------------------------\n"""+R+"""
       == """+Y+"""Installation complete! """+R+"""=="""+CY+"""\n
