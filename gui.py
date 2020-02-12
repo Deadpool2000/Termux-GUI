@@ -27,7 +27,7 @@ try:
             print(R+"""\n
 ----------------------------------------------\n"""+Y+"""
       == """+R+"""Installation Aborted! """+Y+"""==\n"""+W)
-            exit()
+            sys.exit()
                   
             
         print(R+"""\n
