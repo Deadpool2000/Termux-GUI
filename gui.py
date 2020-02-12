@@ -21,6 +21,7 @@ try:
         print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
         os.system("pkg install x11-repo")
         os.system("pkg install unstable-repo")
+        os.system("pkg install root-repo")
         print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
         os.system("pkg install xfce xfce4-terminal tigervnc -y")
         print(R+"""\n
