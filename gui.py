@@ -17,14 +17,19 @@ try:
     
 """)
     try:
-        urllib.request.urlopen("http://google.com")
-        print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
-        os.system("pkg install x11-repo")
-        os.system("pkg install unstable-repo")
-        os.system("pkg install root-repo")
-        os.system("apt update")
-        print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
-        os.system("pkg install xfce xfce4-terminal tigervnc -y")
+        try:
+            urllib.request.urlopen("http://google.com")
+            print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
+            os.system("pkg install x11-repo unstable-repo root-repo")
+            print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
+            os.system("apt install xfce xfce4-terminal tigervnc -y")
+        except KeyboardInterrupt:
+            print(R+"""\n
+----------------------------------------------\n"""+Y+"""
+      == """+R+"""Installation Aborted! """+Y+"""==\n"""+W)
+            exit()
+                  
+            
         print(R+"""\n
 ----------------------------------------------\n"""+R+"""
       == """+Y+"""Installation complete! """+R+"""=="""+CY+"""\n
