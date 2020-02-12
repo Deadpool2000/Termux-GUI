@@ -19,8 +19,8 @@ try:
     try:
         urllib.request.urlopen("http://google.com")
         print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
-        os.system("apt install x11-repo")
-        os.system("apt install unstable-repo")
+        os.system("pkg install x11-repo")
+        os.system("pkg install unstable-repo")
         print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
         os.system("apt install xfce xfce4-terminal tigervnc -y")
         print(R+"""\n
