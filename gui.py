@@ -46,6 +46,7 @@ Now follow these steps to run Termux-GUI -->
 
    localhost:<session_number>"""+Y+"""
    e.g. localhost:1
+   
 """+R+"""3)"""+Y+""" After above step,type following command -"""+G+"""
 
     DISPLAY=:1 startxfce4 &"""+Y+"""
@@ -53,7 +54,9 @@ Now follow these steps to run Termux-GUI -->
 Here,1 is a session number.
 """+R+"""4)"""+Y+""" Install VNC Viewer on your phone
 """+R+"""5)"""+Y+""" Add IP Address which you got at Step 3"""+G+"""
+
     e.g. localhost:1
+    
 """+R+"""6)"""+Y+""" Add name
 """+R+"""7)"""+Y+""" Click on Connect
 """+R+"""8)"""+Y+""" Enter VNC password which you used at Step 2
