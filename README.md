@@ -10,7 +10,8 @@ A simple python script to install xfce environment in Termux
 1) apt install python3
 2) git clone https://github.com/Deadpool2000/Termux-GUI.git
 3) cd Termux-GUI
-4) python3 gui.py
+4) pip3 install -r requirements.txt
+5) python3 gui.py
 
 ## Download
 VNC Viewer - [Download](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_IN)
