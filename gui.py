@@ -4,38 +4,39 @@ import requests
 import sys
 
 try:
-    def con():
-        try:
-            print(G+"\nChecking internet connection........\n")
-            requests.get("http://google.com")
-        except requests.ConnectionError:
-            print(Y+"""
+    try:
+        def con():
+            try:
+                print(G+"\nChecking internet connection........\n")
+                requests.get("http://google.com")
+            except requests.ConnectionError:
+                print(Y+"""
 <------------------------------>"""+R+"""
 Failed to connect to internet!\nCheck your internet connection :( """+Y+"""
 <-------------------------------->\n"""+W)
             sys.exit()
 	        
-    R='\033[91m' #Red
-    Y='\033[93m' #Yellow
-    G='\033[92m' #Green
-    CY='\033[96m' #Cyan
-    W='\033[97m' #White
-    B='\033[95m' #Blue
+        R='\033[91m' #Red
+        Y='\033[93m' #Yellow
+        G='\033[92m' #Green
+        CY='\033[96m' #Cyan
+        W='\033[97m' #White
+        B='\033[95m' #Blue
 
-    print(Y+"""
+        print(Y+"""
 <----------------------------------------------->"""+G+"""
               Termux GUI Installer"""+Y+"""
 <----------------------------------------------->"""+R+"""
               == """+CY+"""By Deadpool2000 """+R+"""==
     
 """)
-    con()
-    print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
-    os.system("apt install x11-repo")
-    os.system("apt install unstable-repo")
-    print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
-    os.system("apt install xfce xfce4-terminal tigervnc -y")
-    print(R+"""\n
+        con()
+        print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
+        os.system("apt install x11-repo")
+        os.system("apt install unstable-repo")
+        print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
+        os.system("apt install xfce xfce4-terminal tigervnc -y")
+        print(R+"""\n
 ----------------------------------------------\n"""+R+"""
 == """+Y+"""Installation complete! """+R+"""=="""+CY+"""\n
 Now follow these steps to run Termux-GUI -->
@@ -46,7 +47,6 @@ Now follow these steps to run Termux-GUI -->
 
    localhost:<session_number>"""+Y+"""
    e.g. localhost:1
-   
 """+R+"""3)"""+Y+""" After above step,type following command -"""+G+"""
 
     DISPLAY=:1 startxfce4 &"""+Y+"""
@@ -66,6 +66,11 @@ Here,1 is a session number.
 
 e.g. vncserver -kill :1
 """+W)
+    except ModuleNotFoundError:
+        print(G+"Installing dependencies..........\n"+W)
+        os.system("pip3 install requests")
+        os.system("clear")
+        print(Y+"Please run again 'python3 gui.py'\n"+W)
 except KeyboardInterrupt:
     print("Interrupted ! Good Bye! :) ")
 
