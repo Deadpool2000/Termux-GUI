@@ -1,7 +1,20 @@
 import os
 import urllib.request
+import requests
+import sys
 
 try:
+    def con():
+        try:
+            print(G+"\nChecking internet connection........\n")
+            requests.get("http://google.com")
+        except requests.ConnectionError:
+            print(Y+"""
+<------------------------------>"""+R+"""
+Failed to connect to internet!\nCheck your internet connection :( """+Y+"""
+<-------------------------------->\n"""+W)
+            sys.exit()
+	        
     R='\033[91m' #Red
     Y='\033[93m' #Yellow
     G='\033[92m' #Green
@@ -16,23 +29,15 @@ try:
               == """+CY+"""By Deadpool2000 """+R+"""==
     
 """)
-    try:
-        try:
-            urllib.request.urlopen("http://google.com")
-            print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
-            os.system("pkg install x11-repo unstable-repo root-repo")
-            print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
-            os.system("apt install xfce xfce4-terminal tigervnc -y")
-        except KeyboardInterrupt:
-            print(R+"""\n
-----------------------------------------------\n"""+Y+"""
-      == """+R+"""Installation Aborted! """+Y+"""==\n"""+W)
-            sys.exit()
-                  
-            
-        print(R+"""\n
+    con()
+    print(Y+"\n==>"+CY+" Installing repositories............\n"+W)
+    os.system("apt install x11-repo")
+    os.system("apt install unstable-repo")
+    print(Y+"\n==>"+CY+" Installing XFCE Environment...........\n"+W)
+    os.system("apt install xfce xfce4-terminal tigervnc -y")
+    print(R+"""\n
 ----------------------------------------------\n"""+R+"""
-      == """+Y+"""Installation complete! """+R+"""=="""+CY+"""\n
+== """+Y+"""Installation complete! """+R+"""=="""+CY+"""\n
 Now follow these steps to run Termux-GUI -->
 
 """+R+"""1)"""+Y+""" Run """+G+"""'vncserver'"""+Y+""" command
@@ -49,9 +54,7 @@ Now follow these steps to run Termux-GUI -->
 Here,1 is a session number.
 """+R+"""4)"""+Y+""" Install VNC Viewer on your phone
 """+R+"""5)"""+Y+""" Add IP Address which you got at Step 3"""+G+"""
-
     e.g. localhost:1
-    
 """+R+"""6)"""+Y+""" Add name
 """+R+"""7)"""+Y+""" Click on Connect
 """+R+"""8)"""+Y+""" Enter VNC password which you used at Step 2
@@ -63,11 +66,6 @@ Here,1 is a session number.
 
 e.g. vncserver -kill :1
 """+W)
-    except:
-        print(Y+"""
-<------------------------------>"""+R+"""
-Failed to connect to internet!\nCheck your internet connection :( """+Y+"""
-<-------------------------------->\n"""+W)
 except KeyboardInterrupt:
     print("Interrupted ! Good Bye! :) ")
 
