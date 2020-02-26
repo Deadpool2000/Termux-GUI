@@ -2,7 +2,7 @@
 Use termux in GUI mode using XFCE environment
 
 #### XFCE running on Termux -
-![screenshot](https://user-images.githubusercontent.com/32305505/74161451-f92a2f80-4c44-11ea-8a84-bd1e9e406b42.png)
+![Screenshot_20200211-114119](https://user-images.githubusercontent.com/32305505/75316470-74b5ee80-588b-11ea-8454-4fd4c0aceba7.png)
 
 A simple python script to install xfce environment in Termux
 
