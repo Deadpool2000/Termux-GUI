@@ -52,5 +52,6 @@ Enter following command before exit -
 
             vncserver -kill :<session_number>
             e.g. vncserver -kill :1
-            
+
+## For more information,visit this link - [How to install GUI in Termux](https://mrhacker7.blogspot.com/2020/10/install-graphical-user-interface-gui-in.html?m=1)
 ## If you have any issue regarding this,Report [Here](https://github.com/Deadpool2000/Termux-GUI/issues)
