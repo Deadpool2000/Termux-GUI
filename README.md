@@ -1,10 +1,13 @@
 # Termux-GUI (v1.2)
 Use termux in GUI mode using XFCE and MATE environment
 
-#### XFCE running on Termux -
+### XFCE running on Termux -
 ![Screenshot_20200211-114119](https://user-images.githubusercontent.com/32305505/75316470-74b5ee80-588b-11ea-8454-4fd4c0aceba7.png)
 
-#### MATE running on Termux -
+### MATE running on Termux -
+
+![Screenshot_20211011-103504](https://user-images.githubusercontent.com/32305505/136737365-5d7d55d0-9d1e-4e6e-8003-aa116222ec45.png)
+
 
 A simple python script to install xfce and mate environment in Termux
 
