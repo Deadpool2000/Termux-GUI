@@ -12,11 +12,11 @@ Use termux in GUI mode using XFCE and MATE environment
 A simple python script to install xfce and mate environment in Termux
 
 ## Installation
-1) apt install python3
+1) apt install python
 2) git clone https://github.com/Deadpool2000/Termux-GUI.git
 3) cd Termux-GUI
-4) pip3 install -r requirements.txt
-5) python3 gui.py
+4) pip install -r requirements.txt
+5) python gui.py
 
 ## Download
 VNC Viewer - [Download](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en_IN)
