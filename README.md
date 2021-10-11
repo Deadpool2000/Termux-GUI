@@ -1,4 +1,4 @@
-# Termux-GUI (v1.2)
+# Termux-GUI (v1.1)
 Use termux in GUI mode using XFCE and MATE environment
 
 ### XFCE running on Termux -
