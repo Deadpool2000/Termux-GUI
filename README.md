@@ -1,10 +1,12 @@
-# Termux-GUI
-Use termux in GUI mode using XFCE environment
+# Termux-GUI (v1.2)
+Use termux in GUI mode using XFCE and MATE environment
 
 #### XFCE running on Termux -
 ![Screenshot_20200211-114119](https://user-images.githubusercontent.com/32305505/75316470-74b5ee80-588b-11ea-8454-4fd4c0aceba7.png)
 
-A simple python script to install xfce environment in Termux
+#### MATE running on Termux -
+
+A simple python script to install xfce and mate environment in Termux
 
 ## Installation
 1) apt install python3
@@ -28,9 +30,15 @@ c) You will get IP Address like this -
 
       e.g. localhost:1
    
-d) After above step,type following command -
+d) After above step, to start GUI, use following command -
+
+   A] For XFCE environment -
 
       DISPLAY=:1 startxfce4 &
+
+   B] For MATE environment -
+
+      DISPLAY=:1 mate-session &
 
    Here,1 is a session number.
       
@@ -45,6 +53,7 @@ g) Add name
 h) Click on Connect
 
 i) Enter VNC password which you used at Step 2
+
 
 ## Exit GUI
 
